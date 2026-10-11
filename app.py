@@ -18,6 +18,12 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_openai import ChatOpenAI, OpenAIEmbeddings
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 
+# ============================================================
+# 0. LOAD BANNER
+# ============================================================
+from PIL import Image
+banner = Image.open("banner.png")
+
 # --------------------------------------------------------------------------
 # 1. Structured output schemas (used by the Output Parser)
 # --------------------------------------------------------------------------
@@ -292,3 +298,19 @@ if data and data["evaluations"]:
                 for d in docs:
                     st.caption(f"{d.metadata['candidate']} (page {d.metadata.get('page', 0) + 1})")
                     st.write(d.page_content)
+
+# ============================================================
+# 5. FOOTER
+# ============================================================
+
+st.markdown("---")
+
+st.markdown("""
+<div style='text-align: center;'>
+
+### 🌍 AI Resume Screening Assistant using GenAI & Agentic AI
+
+Built with ❤️ using Streamlit | Developed by nmshah9
+
+</div>
+""", unsafe_allow_html=True)
