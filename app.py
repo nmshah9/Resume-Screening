@@ -318,3 +318,19 @@ if data and data["evaluations"]:
                 for d in docs:
                     st.caption(f"{d.metadata['candidate']} (page {d.metadata.get('page', 0) + 1})")
                     st.write(d.page_content)
+
+# ============================================================
+# 5. FOOTER
+# ============================================================
+
+st.markdown("---")
+
+st.markdown("""
+<div style='text-align: center;'>
+
+### 🌍 AI Resume Screening Assistant using GenAI & Agentic AI
+
+Built with ❤️ using Streamlit | Developed by nmshah9
+
+</div>
+""", unsafe_allow_html=True)
