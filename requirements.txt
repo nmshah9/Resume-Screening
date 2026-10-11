@@ -1,0 +1,11 @@
+streamlit>=1.35
+langchain>=0.3
+langchain-core>=0.3
+langchain-community>=0.3
+langchain-openai>=0.2
+langchain-text-splitters>=0.3
+faiss-cpu
+pypdf
+pydantic>=2
+pandas
+fastembed
