@@ -18,6 +18,13 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_openai import ChatOpenAI, OpenAIEmbeddings
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 
+# ============================================================
+# 0. LOAD BANNER
+# ============================================================
+from PIL import Image
+banner = Image.open("banner.png")
+st.image(banner, use_column_width=True)
+
 # --------------------------------------------------------------------------
 # 1. Structured output schemas (used by the Output Parser)
 # --------------------------------------------------------------------------
