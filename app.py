@@ -23,6 +23,7 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 # ============================================================
 from PIL import Image
 banner = Image.open("banner.png")
+st.image(banner, use_column_width=True)
 
 # --------------------------------------------------------------------------
 # 1. Structured output schemas (used by the Output Parser)
